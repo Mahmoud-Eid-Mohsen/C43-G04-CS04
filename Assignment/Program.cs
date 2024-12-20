@@ -1,4 +1,6 @@
-﻿namespace Assignment
+﻿using System;
+
+namespace Assignment
 {
     internal class Program
     {
@@ -19,7 +21,7 @@
             #region Q2
             //Write a program that allows the user to insert an integer then 
             //print a multiplication table up to 12
-            Console.WriteLine("enter number");
+            Console.WriteLine("Q2: enter number");
             int nu = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= 12; i++)
             {
@@ -27,10 +29,12 @@
                 Console.Write(" ");
             }
             Console.WriteLine("  ");
+
+            #endregion
             #region Q3
             //Write a program that allows to user to insert number then print all even numbers between 1
             //to this number
-            Console.WriteLine("enter integer  number");
+            Console.WriteLine(" Q3: enter integer  number");
             int num = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= num; i++)
             {
@@ -41,6 +45,22 @@
                 }
             }
             #endregion
+            Console.WriteLine("  ");
+
+            #region Q4
+            //Write a program that takes two integers then prints the power.
+            Console.WriteLine("Q4: enter integer  number");
+            int numb = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" enter integer  power for this number");
+            int power= Convert.ToInt32(Console.ReadLine());
+            int result = 1;
+            for (int i = 1; i <= power; i++)
+            {
+
+                 result = numb * result;
+        
+            }
+            Console.Write(result);
 
             #endregion
         }
