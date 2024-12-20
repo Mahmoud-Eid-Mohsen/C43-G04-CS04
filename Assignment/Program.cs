@@ -10,8 +10,8 @@ namespace Assignment
             //1- Write a program that allows the user to insert an integer then print all numbers between 1 to
             //that number.
             Console.WriteLine("enter number");
-           int n=Convert.ToInt32(Console.ReadLine());   
-           for (int i = 1; i <= n; i++)
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
             {
                 Console.WriteLine(i);
 
@@ -25,7 +25,7 @@ namespace Assignment
             int nu = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= 12; i++)
             {
-                Console.Write(i* nu);
+                Console.Write(i * nu);
                 Console.Write(" ");
             }
             Console.WriteLine("  ");
@@ -38,7 +38,7 @@ namespace Assignment
             int num = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= num; i++)
             {
-                if (i%2==0)
+                if (i % 2 == 0)
                 {
                     Console.Write(i);
                     Console.Write(" ");
@@ -52,15 +52,29 @@ namespace Assignment
             Console.WriteLine("Q4: enter integer  number");
             int numb = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(" enter integer  power for this number");
-            int power= Convert.ToInt32(Console.ReadLine());
+            int power = Convert.ToInt32(Console.ReadLine());
             int result = 1;
             for (int i = 1; i <= power; i++)
             {
 
-                 result = numb * result;
-        
+                result = numb * result;
+
             }
-            Console.Write(result);
+            Console.WriteLine(result);
+
+            #endregion
+            #region Q5
+            // Write a program to allow the user to enter a string and print the REVERSE of it.
+
+            Console.WriteLine(" Q5: Enter string to reverse it");
+            string? name = Console.ReadLine();
+            Char[] chars = name.ToArray();
+            int index=chars.Length;
+
+            for (int i =1; i < index; i++)
+            {
+                Console.Write(chars[index-i]);
+            }
 
             #endregion
         }
