@@ -26,6 +26,21 @@
                 Console.Write(i* nu);
                 Console.Write(" ");
             }
+            Console.WriteLine("  ");
+            #region Q3
+            //Write a program that allows to user to insert number then print all even numbers between 1
+            //to this number
+            Console.WriteLine("enter integer  number");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= num; i++)
+            {
+                if (i%2==0)
+                {
+                    Console.Write(i);
+                    Console.Write(" ");
+                }
+            }
+            #endregion
 
             #endregion
         }
