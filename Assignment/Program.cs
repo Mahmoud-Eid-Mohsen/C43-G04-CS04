@@ -69,12 +69,27 @@ namespace Assignment
             Console.WriteLine(" Q5: Enter string to reverse it");
             string? name = Console.ReadLine();
             Char[] chars = name.ToArray();
-            int index=chars.Length;
+            int index = chars.Length;
 
-            for (int i =1; i < index; i++)
+            for (int i = 1; i < index; i++)
             {
-                Console.Write(chars[index-i]);
+                Console.Write(chars[index - i]);
             }
+
+            #endregion
+            #region Q6
+            //6- Write a program to allow the user to enter int and print the REVERSED of it.
+            Console.WriteLine(" Q6: Enter int to reverse it");
+            string? inbut =  Console.ReadLine();
+            char[] ints = inbut.ToArray();
+        
+            int ind = ints.Length;
+
+            for (int i = 1; i <= ind; i++)
+            {
+                Console.Write(ints[ind - i]);
+            }
+
 
             #endregion
         }
