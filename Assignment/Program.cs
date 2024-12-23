@@ -74,7 +74,7 @@ namespace Assignment
 
         //Q5
         public static bool isprime(int num)
-        { if (num <= 1)
+        { if (num < 1)
             { return false; }
             for (int i = 2; i < num; i++)
             { if (num % i == 0)
@@ -178,6 +178,23 @@ namespace Assignment
             }
 
 
+
+            #endregion
+            #region Q7
+            //Write a program in C# Sharp to find prime numbers within a range of numbers.
+            Console.WriteLine("Enter the start of the range to find prime numbers:");
+            int start = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the end of the range:");
+            int end = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Prime numbers between {start} and {end} are:");
+            for (int i = start; i <= end; i++) 
+            { 
+                if (isprime(i)) 
+                { Console.Write(i);
+                    Console.Write(" ");
+                }
+            }
+            Console.WriteLine();
             #endregion
 
             #region function
