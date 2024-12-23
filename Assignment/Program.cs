@@ -10,7 +10,14 @@ namespace Assignment
     {
         static void PassingByValue(int x) { x += 10; }
         static void PassingByReference(ref int x) { x += 10; }
+        //Q2
+        public static void SumSub(int x , int y , out int sum , out int sub )
+        {
+            sum = x + y;
+            sub = x- y;
         
+        
+        }
 
         static void Main(string[] args)
         {
@@ -127,7 +134,22 @@ namespace Assignment
             #region Q2
 
             #endregion
-           
+            #region Q3
+            //Write a c# Function that accept 4 parameters from user and return result of
+            //summation and subtracting of two numbers
+            Console.WriteLine("enter integer number 1");
+            Console.Write("number 1 : ");
+            int A =Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter integer number 2");
+            Console.Write("number 2 : ");
+            int B =Convert.ToInt32(Console.ReadLine());
+            int resultsum;
+            int resultsub;
+
+            SumSub(A, B, out resultsum, out resultsub);
+            Console.WriteLine($"result sum = { resultsum }");
+            Console.WriteLine($"result sub = {resultsub}");
+            #endregion
 
 
 
