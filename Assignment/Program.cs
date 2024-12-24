@@ -197,6 +197,14 @@ namespace Assignment
             }
             Console.WriteLine();
             #endregion
+            #region Q14
+            //Write a program in C# Sharp to find maximum and minimum element in an array
+            int[] findmaxmini = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Array.Sort(findmaxmini);
+            Console.WriteLine($"maximum value of element is : {findsecond[findmaxmini.Length-1]}");
+            Console.WriteLine($"minmum value of element is : {findsecond[0]} ");
+
+            #endregion
             #region Q15
             //Write a program in C# Sharp to find the second largest element in an array.
             int[] findsecond = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
