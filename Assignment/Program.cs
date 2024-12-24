@@ -197,6 +197,16 @@ namespace Assignment
             }
             Console.WriteLine();
             #endregion
+            #region Q17
+            //Given a list of space separated words, reverse the order of the words.
+            Console.WriteLine(" enter a list of space separated words");
+            string input = Console.ReadLine();
+            string[] words = input.Split(' ');
+            Array.Reverse(words);
+            string reversed = string.Join(" ", words);
+            // Print the reversed string
+            Console.WriteLine("Reversed: " + reversed);
+            #endregion
             #region Q18
             //- Write a program to create two multidimensional arrays of same size. Accept value from user and store them in first array.
             //Now copy all the elements of first array on second array and print second array.
