@@ -187,16 +187,36 @@ namespace Assignment
             Console.WriteLine("Enter the end of the range:");
             int end = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Prime numbers between {start} and {end} are:");
-            for (int i = start; i <= end; i++) 
-            { 
-                if (isprime(i)) 
-                { Console.Write(i);
+            for (int i = start; i <= end; i++)
+            {
+                if (isprime(i))
+                {
+                    Console.Write(i);
                     Console.Write(" ");
                 }
             }
             Console.WriteLine();
             #endregion
+            #region Q19
+            // Write a Program to Print One Dimensional Array in Reverse Order
+            int[] oneD = { 50, 30, 28, 90 };
+            Console.WriteLine("Original array:");
+                for (int i = 0; i < oneD.Length; i++) 
+                {Console.Write(oneD[i] );
+                Console.Write(" ");
+                }
+                Console.WriteLine();
+            Array.Sort(oneD);
+            Array.Reverse(oneD);
+            Console.WriteLine("Array in reverse order:");
+            for (int i = 0; i < oneD.Length; i++)
+            {
+                Console.Write(oneD[i] );
+                Console.Write(" ");
+            }
+            Console.WriteLine();
 
+            #endregion
             #region function
             #region Q1
             /*Passing by Value
