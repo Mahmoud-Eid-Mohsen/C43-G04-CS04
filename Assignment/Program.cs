@@ -197,6 +197,13 @@ namespace Assignment
             }
             Console.WriteLine();
             #endregion
+            #region Q15
+            //Write a program in C# Sharp to find the second largest element in an array.
+            int[] findsecond = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Array.Sort(findsecond);
+            Array.Reverse(findsecond);
+            Console.WriteLine(findsecond[1]);
+            #endregion
             #region Q17
             //Given a list of space separated words, reverse the order of the words.
             Console.WriteLine(" enter a list of space separated words");
